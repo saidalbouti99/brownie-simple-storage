@@ -1,7 +1,8 @@
-
 <div id="top"></div>
 <!--
-*** Thanks for checking out my project
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
@@ -25,12 +26,8 @@
 
 
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/saidalbouti99/brownie-simple-storage">
-    <img src="https://www.google.com/search?q=solidity+symbol&sxsrf=APq-WBsaizo6dEXhWG-Uo5Z9OAhYROD4-g:1646578259757&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiJ3ZGC3rH2AhUg63MBHcWwDLsQ_AUoAXoECAEQAw&biw=1536&bih=662&dpr=1.25#imgrc=Ahvg8X_JVTzJHM" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">Brownie Simple Storage</h3>
 
