@@ -34,19 +34,19 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Brownie Simple Storage</h3>
 
   <p align="center">
-    project_description
+    A simple storage smart contract deployed using Brownie
     <br />
     <a href="https://github.com/saidalbouti99/brownie-simple-storage"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/saidalbouti99/brownie-simple-storage">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/saidalbouti99/brownie-simple-storage/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/saidalbouti99/brownie-simple-storage/issues">Request Feature</a>
   </p>
 </div>
 
@@ -93,14 +93,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Solidity](https://soliditylang.org/)
+* [Python](https://www.python.org/)
+* [Brownie](https://eth-brownie.readthedocs.io/en/stable/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -125,7 +120,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/saidalbouti99/brownie-simple-storage.git
    ```
 3. Install NPM packages
    ```sh
@@ -195,9 +190,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/saidalbouti99/brownie-simple-storage](https://github.com/saidalbouti99/brownie-simple-storage)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -206,7 +199,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [PatrickAlphaC](https://github.com/PatrickAlphaC)
 * []()
 * []()
 
