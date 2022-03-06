@@ -1,9 +1,7 @@
 
 <div id="top"></div>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
+*** Thanks for checking out my project
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
@@ -18,7 +16,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][https://github.com/badges/shields/graphs/contributors]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -30,8 +28,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/saidalbouti99/brownie-simple-storage">
+    <img src="https://www.google.com/search?q=solidity+symbol&sxsrf=APq-WBsaizo6dEXhWG-Uo5Z9OAhYROD4-g:1646578259757&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiJ3ZGC3rH2AhUg63MBHcWwDLsQ_AUoAXoECAEQAw&biw=1536&bih=662&dpr=1.25#imgrc=Ahvg8X_JVTzJHM" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Brownie Simple Storage</h3>
@@ -83,9 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+ A simple storage smart contract to store and retrieve number in the Ethereum blockchain using Solidity and Python and deployed using Brownie
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -107,28 +103,83 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/saidalbouti99/brownie-simple-storage.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+1. Install Brownie
+
+```bash
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+# restart your terminal
+pipx install eth-brownie
+```
+Or, if that doesn't work, via pip
+```bash
+pip install eth-brownie
+```
+
+2. Clone this
+```bash
+git clone https://github.com/PatrickAlphaC/brownie_simple_storage
+cd brownie_simple_storage
+```
+3. Add your metamask to the brownie accounts at the `0` index
+
+```bash
+brownie accounts new 0
+```
+You'll be prompted to add your private key:
+`0xa5555555555555a09215803a6b540f1e054797eeda2eec6d49076760d48e7589`
+And a password, and you can see your new added account with `brownie accounts list`
+
+Or, export your `PRIVATE_KEY` as an environment variable, and uncomment the line:
+```python
+# account = accounts.add(config["wallets"]["from_key"])
+```
+and comment the line:
+```python
+account = accounts[0]
+```
+
+4. Testing
+
+```bash
+brownie test
+```
+
+5. Running scripts
+
+```bash
+brownie run scripts/deploy.py
+```
+
+6. Deploy to a testnet
+
+Add your `WEB3_INFURA_PROJECT_ID` from [Infura](https://infura.io/) to your `.env` and run 
+```bash
+source .env
+``` 
+To set your environment variable. You can check you've done it correctly with:
+```bash
+echo $WEB3_INFURA_PROJECT_ID
+```
+Change the `deploy_simple_storage` function in `deploy.py` to look like:
+```
+account = accounts.add(config["wallets"]["from_key"])
+# account = accounts.load("id")
+# account = accounts[0]
+```
+
+Then run:
+```
+brownie run scripts/deploy.py --network rinkeby
+```
+
+Make sure you have some testnet ETH. You can find faucets in the [Chainlink Documenatation](https://docs.chain.link/docs/link-token-contracts/)
+
+
+
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -141,20 +192,6 @@ This is an example of how to list things you need to use the software and how to
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -200,8 +237,7 @@ Project Link: [https://github.com/saidalbouti99/brownie-simple-storage](https://
 ## Acknowledgments
 
 * [PatrickAlphaC](https://github.com/PatrickAlphaC)
-* []()
-* []()
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
